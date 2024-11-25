@@ -1,0 +1,500 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff6f61;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #ff6f61, #ff8a75), url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .hero .btn-primary {
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .hero .btn-primary:hover {
+    background-color: #ff6f61;
+    color: white;
+  }
+  
+  /* Section Titles */
+  section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ff6f61;
+    margin: 10px auto 0;
+  }
+  
+  /* Services Section */
+  #services .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #services .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #services .card-title {
+    color: #ff6f61;
+    font-weight: bold;
+  }
+  
+  /* Testimonials Section */
+  #testimonials blockquote {
+    background: #f8f9fa;
+    border-left: 5px solid #ff6f61;
+    padding: 20px;
+    font-size: 1.1rem;
+    margin: 20px 0;
+  }
+  
+  #testimonials blockquote p {
+    font-style: italic;
+    color: #555;
+  }
+  
+  #testimonials blockquote footer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  /* Contact Form */
+  form .form-label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  form .form-control:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+  }
+  
+  form button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #e55c50;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer p a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer p a:hover {
+    text-decoration: underline;
+  }
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: none; /* Hidden by default */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+    /* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+  
+  .footer h5 {
+    color: #ff6f61;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    margin: 0 0 15px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer ul li a:hover {
+    color: #ff6f61;
+  }
+  
+  .footer .form-control {
+    border-radius: 0;
+  }
+  
+  .footer .btn-primary {
+    background-color: #ff6f61;
+    border: none;
+  }
+  
+  .footer .btn-primary:hover {
+    background-color: #e55c50;
+  }
+  
+  .footer a i {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a i:hover {
+    color: #ff6f61;
+  }
+/* Services Section */
+#services {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+  }
+  
+  #services h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #services h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ff6f61;
+    margin: 20px auto 0;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-img-top {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Grid */
+  @media (max-width: 767px) {
+    #services .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .card {
+      width: 100%;
+    }
+  
+    .card-img-top {
+      height: 220px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .card {
+      margin-bottom: 30px;
+    }
+  }
+/* Services Section */
+#services {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  #services h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #services .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  #services .card-body {
+    padding: 30px;
+  }
+  
+  #services .card-title {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  #services .card-text {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  #services img {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #services img:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 767px) {
+    #services .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #services .card {
+      width: 100%;
+    }
+  }
+/* Review Submission Section */
+#submit-review {
+    background-color: #f1f1f1;
+    padding: 60px 0;
+  }
+  
+  #submit-review h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #review-form .form-label {
+    font-weight: bold;
+  }
+  
+  #review-form .form-control {
+    border-radius: 5px;
+  }
+  
+  #review-form .form-select {
+    border-radius: 5px;
+  }
+  
+  #submit-review .btn {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+  }
+  
+  #submit-review .btn:hover {
+    background-color: #e65550;
+    border-color: #e65550;
+  }
+/* Default Light Mode */
+body {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #color-toggle-btn {
+    padding: 10px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #ff6f61;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  #color-toggle-btn:hover {
+    background-color: #e65550;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #333;
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode #color-toggle-btn {
+    background-color: #e65550;
+    color: #fff;
+  }
+  
+  body.dark-mode #color-toggle-btn:hover {
+    background-color: #ff6f61;
+  }
+/* Style for the button */
+.show-form-btn {
+  background-color: red; /* Change button color to red */
+  color: white; /* Set text color to white */
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px; /* Add gap between the contact section and the button */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.show-form-btn:hover {
+  background-color: #d9534f; /* Change button color on hover */
+}
+
+/* Optional: Add some padding or margin around the "Contact" section */
+.contact-section {
+  margin-bottom: 30px; /* Gap between the "Contact" section and the button */
+}
+/* Flexbox to align elements horizontally */
+.contact-section {
+  display: flex;
+  justify-content: space-between; /* Space out the items, or you can use 'center' to keep them together */
+  align-items: center; /* Align items vertically */
+  gap: 10px; /* Space between elements */
+}
+
+/* Style for the button */
+.show-form-btn {
+  background-color: red; /* Button color */
+  color: white;
+  padding: 5px 15px; /* Smaller padding for a smaller button */
+  font-size: 0.9rem; /* Smaller text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: auto; /* Remove height constraints */
+}
+
+.show-form-btn:hover {
+  background-color: #d9534f;
+}
+          
